@@ -5,42 +5,42 @@ block content
 		h1=title
 		p putting the ape in API
 	.ac-main
-		#ac-calculator
-			.ac-readout 0
+		#ac-calculator(ng-app='apeCalc', ng-controller='ReadoutController')
+			input.ac-readout(ng-model='readout', readonly='readonly')
 			.ac-buttons
 				.ac-button-row
 					.ac-button-cell
-						.ac-button 7
+						.ac-button(ng-click='onNgClick("7")') 7
 					.ac-button-cell
-						.ac-button 8
+						.ac-button(ng-click='onNgClick("8")') 8
 					.ac-button-cell
-						.ac-button 9
+						.ac-button(ng-click='onNgClick("9")') 9
 					.ac-button-cell
-						.ac-button C
+						.ac-button(ng-click='onNgClick("C")') C
 				.ac-button-row
 					.ac-button-cell
-						.ac-button 4
+						.ac-button(ng-click='onNgClick("4")') 4
 					.ac-button-cell
-						.ac-button 5
+						.ac-button(ng-click='onNgClick("5")') 5
 					.ac-button-cell
-						.ac-button 6
+						.ac-button(ng-click='onNgClick("6")') 6
 					.ac-button-cell
-						.ac-button &#47;
+						.ac-button(ng-click='onNgClick("/")') &#47;
 				.ac-button-row
 					.ac-button-cell
-						.ac-button 1
+						.ac-button(ng-click='onNgClick("1")') 1
 					.ac-button-cell
-						.ac-button 2
+						.ac-button(ng-click='onNgClick("2")') 2
 					.ac-button-cell
-						.ac-button 3
+						.ac-button(ng-click='onNgClick("3")') 3
 					.ac-button-cell
-						.ac-button &#42;
+						.ac-button(ng-click='onNgClick("*")') &#42;
 				.ac-button-row
 					.ac-button-cell
-						.ac-button &#61;
+						.ac-button(ng-click='onNgClick("=")') &#61;
 					.ac-button-cell
-						.ac-button 0
+						.ac-button(ng-click='onNgClick("0")') 0
 					.ac-button-cell
-						.ac-button &#43;
+						.ac-button(ng-click='onNgClick("+")') &#43;
 					.ac-button-cell
-						.ac-button &#45;
+						.ac-button(ng-click='onNgClick("-")') &#45;
