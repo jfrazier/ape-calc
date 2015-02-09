@@ -1,0 +1,46 @@
+extends layout
+
+block content
+	.ac-header
+		h1=title
+		p putting the ape in API
+	.ac-main
+		#ac-calculator
+			.ac-readout 0
+			.ac-buttons
+				.ac-button-row
+					.ac-button-cell
+						.ac-button 7
+					.ac-button-cell
+						.ac-button 8
+					.ac-button-cell
+						.ac-button 9
+					.ac-button-cell
+						.ac-button C
+				.ac-button-row
+					.ac-button-cell
+						.ac-button 4
+					.ac-button-cell
+						.ac-button 5
+					.ac-button-cell
+						.ac-button 6
+					.ac-button-cell
+						.ac-button &#47;
+				.ac-button-row
+					.ac-button-cell
+						.ac-button 1
+					.ac-button-cell
+						.ac-button 2
+					.ac-button-cell
+						.ac-button 3
+					.ac-button-cell
+						.ac-button &#42;
+				.ac-button-row
+					.ac-button-cell
+						.ac-button &#61;
+					.ac-button-cell
+						.ac-button 0
+					.ac-button-cell
+						.ac-button &#43;
+					.ac-button-cell
+						.ac-button &#45;
